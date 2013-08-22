@@ -50,7 +50,7 @@
 
 - (void)draw
 {
-  gauge = [[SBGaugeContext alloc] initWithSegments:6.0f initialStep:1];
+  gauge = [[SBGaugeContext alloc] initWithSegments:self.segments];
   
   gaugeLayer = [self drawCircleLayer:self.gaugeColor];
   
@@ -88,7 +88,7 @@
 - (CAShapeLayer *) drawCircleLayer:(UIColor *)color
 {
   CGFloat radius = MIN(self.frame.size.width,self.frame.size.height)/2;
-  CGFloat inset  = 10;
+  CGFloat inset  = self.width/2;
   
   CAShapeLayer *circleLayer = [CAShapeLayer layer];
   circleLayer.fillColor = [UIColor clearColor].CGColor;

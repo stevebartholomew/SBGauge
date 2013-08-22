@@ -10,8 +10,11 @@
 #import "SBGaugeView.h"
 
 @interface SBViewController : UIViewController
-@property (weak, nonatomic) IBOutlet SBGaugeView *gauge;
+@property (weak, nonatomic) IBOutlet SBGaugeView *pieGauge;
+@property (weak, nonatomic) IBOutlet SBGaugeView *donutGauge;
+@property (weak, nonatomic) IBOutlet SBGaugeView *progressGauge;
 - (IBAction)up:(id)sender;
 - (IBAction)down:(id)sender;
+- (IBAction)play:(id)sender;
 
 @end

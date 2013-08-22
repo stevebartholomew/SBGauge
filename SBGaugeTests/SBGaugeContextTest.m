@@ -15,9 +15,9 @@
 @implementation SBGaugeContextTest
 - (void) testCorrectlyStepsUp
 {
-  SBGaugeContext *gauge = [[SBGaugeContext alloc] initWithSegments:4.0f initialStep:1];
-  
-  STAssertEquals(gauge.previous, 0.25f, nil);
+  SBGaugeContext *gauge = [[SBGaugeContext alloc] initWithSegments:4.0f];
+  [gauge stepUp];
+  STAssertEquals(gauge.previous, 0.0f, nil);
   STAssertEquals(gauge.value, 0.25f, nil);
   
   [gauge stepUp];
@@ -38,8 +38,11 @@
 
 - (void) testCorrectlyStepsDown
 {
-  SBGaugeContext *gauge = [[SBGaugeContext alloc] initWithSegments:4.0f initialStep:4];
-  
+  SBGaugeContext *gauge = [[SBGaugeContext alloc] initWithSegments:4.0f];
+  for (int i=0; i<4; i++) {
+    [gauge stepUp];
+  }
+  [gauge stepUp];
   STAssertEquals(gauge.previous, 1.0f, nil);
   STAssertEquals(gauge.value, 1.0f, nil);
   

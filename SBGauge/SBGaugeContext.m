@@ -17,11 +17,11 @@
 
 @synthesize numberOfSegments, segmentSize, step, previous, value;
 
-- (id)initWithSegments:(float) segments initialStep:(int) initialStep
+- (id)initWithSegments:(float) segments
 {
   numberOfSegments = segments;
   segmentSize = 1.0 / numberOfSegments;
-  step = initialStep;
+  step = 0;
   [self updateValue];
   previous = value;
   

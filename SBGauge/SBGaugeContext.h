@@ -16,7 +16,7 @@
 @property float previous;
 @property float value;
 
-- (id)initWithSegments:(float) segments initialStep:(int) initialStep;
+- (id)initWithSegments:(float) segments;
 - (void) stepUp;
 - (void) stepDown;
 
