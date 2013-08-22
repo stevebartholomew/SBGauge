@@ -1,0 +1,442 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EA18985B17C6252E00F7AD71 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA18985A17C6252E00F7AD71 /* Foundation.framework */; };
+		EA18986A17C6252E00F7AD71 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA18986917C6252E00F7AD71 /* SenTestingKit.framework */; };
+		EA18986C17C6252E00F7AD71 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA18986B17C6252E00F7AD71 /* UIKit.framework */; };
+		EA18986D17C6252E00F7AD71 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA18985A17C6252E00F7AD71 /* Foundation.framework */; };
+		EA18987017C6252E00F7AD71 /* libSBGauge.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EA18985717C6252E00F7AD71 /* libSBGauge.a */; };
+		EA18987617C6252E00F7AD71 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EA18987417C6252E00F7AD71 /* InfoPlist.strings */; };
+		EA18988C17C6257900F7AD71 /* SBGaugeContextTest.m in Sources */ = {isa = PBXBuildFile; fileRef = EA18988A17C6257900F7AD71 /* SBGaugeContextTest.m */; };
+		EA18988D17C6257900F7AD71 /* SBGaugeViewTest.m in Sources */ = {isa = PBXBuildFile; fileRef = EA18988B17C6257900F7AD71 /* SBGaugeViewTest.m */; };
+		EA18988F17C625A000F7AD71 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA18988E17C625A000F7AD71 /* UIKit.framework */; };
+		EA18989117C625A700F7AD71 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA18989017C625A700F7AD71 /* QuartzCore.framework */; };
+		EA18989217C625B800F7AD71 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA18989017C625A700F7AD71 /* QuartzCore.framework */; };
+		EA18989417C625CD00F7AD71 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA18989317C625CD00F7AD71 /* CoreGraphics.framework */; };
+		EA18989517C625D300F7AD71 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA18989317C625CD00F7AD71 /* CoreGraphics.framework */; };
+		EA1898AA17C626FE00F7AD71 /* SBGaugeView.m in Sources */ = {isa = PBXBuildFile; fileRef = EA1898A717C626FE00F7AD71 /* SBGaugeView.m */; };
+		EA1898AB17C626FE00F7AD71 /* SBGaugeContext.m in Sources */ = {isa = PBXBuildFile; fileRef = EA1898A917C626FE00F7AD71 /* SBGaugeContext.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EA18986E17C6252E00F7AD71 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EA18984F17C6252E00F7AD71 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EA18985617C6252E00F7AD71;
+			remoteInfo = SBGauge;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		EA18985517C6252E00F7AD71 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/${PRODUCT_NAME}";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		EA18985717C6252E00F7AD71 /* libSBGauge.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSBGauge.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA18985A17C6252E00F7AD71 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		EA18985E17C6252E00F7AD71 /* SBGauge-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SBGauge-Prefix.pch"; sourceTree = "<group>"; };
+		EA18986817C6252E00F7AD71 /* SBGaugeTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SBGaugeTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA18986917C6252E00F7AD71 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		EA18986B17C6252E00F7AD71 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		EA18987317C6252E00F7AD71 /* SBGaugeTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SBGaugeTests-Info.plist"; sourceTree = "<group>"; };
+		EA18987517C6252E00F7AD71 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		EA18988A17C6257900F7AD71 /* SBGaugeContextTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBGaugeContextTest.m; sourceTree = "<group>"; };
+		EA18988B17C6257900F7AD71 /* SBGaugeViewTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBGaugeViewTest.m; sourceTree = "<group>"; };
+		EA18988E17C625A000F7AD71 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		EA18989017C625A700F7AD71 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		EA18989317C625CD00F7AD71 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		EA1898A617C626FE00F7AD71 /* SBGaugeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBGaugeView.h; sourceTree = "<group>"; };
+		EA1898A717C626FE00F7AD71 /* SBGaugeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBGaugeView.m; sourceTree = "<group>"; };
+		EA1898A817C626FE00F7AD71 /* SBGaugeContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBGaugeContext.h; sourceTree = "<group>"; };
+		EA1898A917C626FE00F7AD71 /* SBGaugeContext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBGaugeContext.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EA18985417C6252E00F7AD71 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA18989517C625D300F7AD71 /* CoreGraphics.framework in Frameworks */,
+				EA18989117C625A700F7AD71 /* QuartzCore.framework in Frameworks */,
+				EA18988F17C625A000F7AD71 /* UIKit.framework in Frameworks */,
+				EA18985B17C6252E00F7AD71 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA18986417C6252E00F7AD71 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA18989417C625CD00F7AD71 /* CoreGraphics.framework in Frameworks */,
+				EA18989217C625B800F7AD71 /* QuartzCore.framework in Frameworks */,
+				EA18986A17C6252E00F7AD71 /* SenTestingKit.framework in Frameworks */,
+				EA18986C17C6252E00F7AD71 /* UIKit.framework in Frameworks */,
+				EA18986D17C6252E00F7AD71 /* Foundation.framework in Frameworks */,
+				EA18987017C6252E00F7AD71 /* libSBGauge.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EA18984E17C6252E00F7AD71 = {
+			isa = PBXGroup;
+			children = (
+				EA18985C17C6252E00F7AD71 /* SBGauge */,
+				EA18987117C6252E00F7AD71 /* SBGaugeTests */,
+				EA18985917C6252E00F7AD71 /* Frameworks */,
+				EA18985817C6252E00F7AD71 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EA18985817C6252E00F7AD71 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EA18985717C6252E00F7AD71 /* libSBGauge.a */,
+				EA18986817C6252E00F7AD71 /* SBGaugeTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EA18985917C6252E00F7AD71 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EA18989317C625CD00F7AD71 /* CoreGraphics.framework */,
+				EA18989017C625A700F7AD71 /* QuartzCore.framework */,
+				EA18988E17C625A000F7AD71 /* UIKit.framework */,
+				EA18985A17C6252E00F7AD71 /* Foundation.framework */,
+				EA18986917C6252E00F7AD71 /* SenTestingKit.framework */,
+				EA18986B17C6252E00F7AD71 /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EA18985C17C6252E00F7AD71 /* SBGauge */ = {
+			isa = PBXGroup;
+			children = (
+				EA1898A617C626FE00F7AD71 /* SBGaugeView.h */,
+				EA1898A717C626FE00F7AD71 /* SBGaugeView.m */,
+				EA1898A817C626FE00F7AD71 /* SBGaugeContext.h */,
+				EA1898A917C626FE00F7AD71 /* SBGaugeContext.m */,
+				EA18985D17C6252E00F7AD71 /* Supporting Files */,
+			);
+			path = SBGauge;
+			sourceTree = "<group>";
+		};
+		EA18985D17C6252E00F7AD71 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EA18985E17C6252E00F7AD71 /* SBGauge-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EA18987117C6252E00F7AD71 /* SBGaugeTests */ = {
+			isa = PBXGroup;
+			children = (
+				EA18988A17C6257900F7AD71 /* SBGaugeContextTest.m */,
+				EA18988B17C6257900F7AD71 /* SBGaugeViewTest.m */,
+				EA18987217C6252E00F7AD71 /* Supporting Files */,
+			);
+			path = SBGaugeTests;
+			sourceTree = "<group>";
+		};
+		EA18987217C6252E00F7AD71 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EA18987317C6252E00F7AD71 /* SBGaugeTests-Info.plist */,
+				EA18987417C6252E00F7AD71 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EA18985617C6252E00F7AD71 /* SBGauge */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EA18987C17C6252E00F7AD71 /* Build configuration list for PBXNativeTarget "SBGauge" */;
+			buildPhases = (
+				EA18985317C6252E00F7AD71 /* Sources */,
+				EA18985417C6252E00F7AD71 /* Frameworks */,
+				EA18985517C6252E00F7AD71 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SBGauge;
+			productName = SBGauge;
+			productReference = EA18985717C6252E00F7AD71 /* libSBGauge.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		EA18986717C6252E00F7AD71 /* SBGaugeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EA18987F17C6252E00F7AD71 /* Build configuration list for PBXNativeTarget "SBGaugeTests" */;
+			buildPhases = (
+				EA18986317C6252E00F7AD71 /* Sources */,
+				EA18986417C6252E00F7AD71 /* Frameworks */,
+				EA18986517C6252E00F7AD71 /* Resources */,
+				EA18986617C6252E00F7AD71 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EA18986F17C6252E00F7AD71 /* PBXTargetDependency */,
+			);
+			name = SBGaugeTests;
+			productName = SBGaugeTests;
+			productReference = EA18986817C6252E00F7AD71 /* SBGaugeTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EA18984F17C6252E00F7AD71 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Stephen Bartholomew";
+			};
+			buildConfigurationList = EA18985217C6252E00F7AD71 /* Build configuration list for PBXProject "SBGauge" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = EA18984E17C6252E00F7AD71;
+			productRefGroup = EA18985817C6252E00F7AD71 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EA18985617C6252E00F7AD71 /* SBGauge */,
+				EA18986717C6252E00F7AD71 /* SBGaugeTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EA18986517C6252E00F7AD71 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA18987617C6252E00F7AD71 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		EA18986617C6252E00F7AD71 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EA18985317C6252E00F7AD71 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA1898AA17C626FE00F7AD71 /* SBGaugeView.m in Sources */,
+				EA1898AB17C626FE00F7AD71 /* SBGaugeContext.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA18986317C6252E00F7AD71 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA18988C17C6257900F7AD71 /* SBGaugeContextTest.m in Sources */,
+				EA18988D17C6257900F7AD71 /* SBGaugeViewTest.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EA18986F17C6252E00F7AD71 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EA18985617C6252E00F7AD71 /* SBGauge */;
+			targetProxy = EA18986E17C6252E00F7AD71 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EA18987417C6252E00F7AD71 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EA18987517C6252E00F7AD71 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EA18987A17C6252E00F7AD71 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		EA18987B17C6252E00F7AD71 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EA18987D17C6252E00F7AD71 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/SBGauge.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SBGauge/SBGauge-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		EA18987E17C6252E00F7AD71 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/SBGauge.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SBGauge/SBGauge-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		EA18988017C6252E00F7AD71 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SBGauge/SBGauge-Prefix.pch";
+				INFOPLIST_FILE = "SBGaugeTests/SBGaugeTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		EA18988117C6252E00F7AD71 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SBGauge/SBGauge-Prefix.pch";
+				INFOPLIST_FILE = "SBGaugeTests/SBGaugeTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EA18985217C6252E00F7AD71 /* Build configuration list for PBXProject "SBGauge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA18987A17C6252E00F7AD71 /* Debug */,
+				EA18987B17C6252E00F7AD71 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EA18987C17C6252E00F7AD71 /* Build configuration list for PBXNativeTarget "SBGauge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA18987D17C6252E00F7AD71 /* Debug */,
+				EA18987E17C6252E00F7AD71 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EA18987F17C6252E00F7AD71 /* Build configuration list for PBXNativeTarget "SBGaugeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA18988017C6252E00F7AD71 /* Debug */,
+				EA18988117C6252E00F7AD71 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EA18984F17C6252E00F7AD71 /* Project object */;
+}

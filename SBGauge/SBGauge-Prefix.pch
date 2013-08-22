@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'SBGauge' target in the 'SBGauge' project
+//
+
+#ifdef __OBJC__
+  #import <Foundation/Foundation.h>
+#endif

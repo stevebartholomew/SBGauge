@@ -1,0 +1,493 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EA1898B917C62D3100F7AD71 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA1898B817C62D3100F7AD71 /* UIKit.framework */; };
+		EA1898BB17C62D3100F7AD71 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA1898BA17C62D3100F7AD71 /* Foundation.framework */; };
+		EA1898BD17C62D3100F7AD71 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA1898BC17C62D3100F7AD71 /* CoreGraphics.framework */; };
+		EA1898C317C62D3100F7AD71 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EA1898C117C62D3100F7AD71 /* InfoPlist.strings */; };
+		EA1898C517C62D3100F7AD71 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EA1898C417C62D3100F7AD71 /* main.m */; };
+		EA1898C917C62D3100F7AD71 /* SBAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EA1898C817C62D3100F7AD71 /* SBAppDelegate.m */; };
+		EA1898CB17C62D3100F7AD71 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = EA1898CA17C62D3100F7AD71 /* Default.png */; };
+		EA1898CD17C62D3100F7AD71 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EA1898CC17C62D3100F7AD71 /* Default@2x.png */; };
+		EA1898CF17C62D3100F7AD71 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EA1898CE17C62D3100F7AD71 /* Default-568h@2x.png */; };
+		EA1898D217C62D3100F7AD71 /* SBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA1898D117C62D3100F7AD71 /* SBViewController.m */; };
+		EA1898D517C62D3100F7AD71 /* SBViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA1898D317C62D3100F7AD71 /* SBViewController.xib */; };
+		EA1898DD17C62D3100F7AD71 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA1898DC17C62D3100F7AD71 /* SenTestingKit.framework */; };
+		EA1898DE17C62D3100F7AD71 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA1898B817C62D3100F7AD71 /* UIKit.framework */; };
+		EA1898DF17C62D3100F7AD71 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA1898BA17C62D3100F7AD71 /* Foundation.framework */; };
+		EA1898E717C62D3100F7AD71 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EA1898E517C62D3100F7AD71 /* InfoPlist.strings */; };
+		EA1898EA17C62D3100F7AD71 /* SBGaugeExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EA1898E917C62D3100F7AD71 /* SBGaugeExampleTests.m */; };
+		EA1898F817C62DC000F7AD71 /* SBGaugeView.m in Sources */ = {isa = PBXBuildFile; fileRef = EA1898F517C62DC000F7AD71 /* SBGaugeView.m */; };
+		EA1898F917C62DC000F7AD71 /* SBGaugeContext.m in Sources */ = {isa = PBXBuildFile; fileRef = EA1898F717C62DC000F7AD71 /* SBGaugeContext.m */; };
+		EA1898FB17C62E9B00F7AD71 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA1898FA17C62E9B00F7AD71 /* QuartzCore.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EA1898E017C62D3100F7AD71 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EA1898AD17C62D3100F7AD71 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EA1898B417C62D3100F7AD71;
+			remoteInfo = SBGaugeExample;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EA1898B517C62D3100F7AD71 /* SBGaugeExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SBGaugeExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA1898B817C62D3100F7AD71 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		EA1898BA17C62D3100F7AD71 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		EA1898BC17C62D3100F7AD71 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		EA1898C017C62D3100F7AD71 /* SBGaugeExample-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SBGaugeExample-Info.plist"; sourceTree = "<group>"; };
+		EA1898C217C62D3100F7AD71 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		EA1898C417C62D3100F7AD71 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EA1898C617C62D3100F7AD71 /* SBGaugeExample-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SBGaugeExample-Prefix.pch"; sourceTree = "<group>"; };
+		EA1898C717C62D3100F7AD71 /* SBAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SBAppDelegate.h; sourceTree = "<group>"; };
+		EA1898C817C62D3100F7AD71 /* SBAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SBAppDelegate.m; sourceTree = "<group>"; };
+		EA1898CA17C62D3100F7AD71 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		EA1898CC17C62D3100F7AD71 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		EA1898CE17C62D3100F7AD71 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		EA1898D017C62D3100F7AD71 /* SBViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SBViewController.h; sourceTree = "<group>"; };
+		EA1898D117C62D3100F7AD71 /* SBViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SBViewController.m; sourceTree = "<group>"; };
+		EA1898D417C62D3100F7AD71 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/SBViewController.xib; sourceTree = "<group>"; };
+		EA1898DB17C62D3100F7AD71 /* SBGaugeExampleTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SBGaugeExampleTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA1898DC17C62D3100F7AD71 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		EA1898E417C62D3100F7AD71 /* SBGaugeExampleTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SBGaugeExampleTests-Info.plist"; sourceTree = "<group>"; };
+		EA1898E617C62D3100F7AD71 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		EA1898E817C62D3100F7AD71 /* SBGaugeExampleTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SBGaugeExampleTests.h; sourceTree = "<group>"; };
+		EA1898E917C62D3100F7AD71 /* SBGaugeExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SBGaugeExampleTests.m; sourceTree = "<group>"; };
+		EA1898F417C62DC000F7AD71 /* SBGaugeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBGaugeView.h; path = ../SBGauge/SBGaugeView.h; sourceTree = "<group>"; };
+		EA1898F517C62DC000F7AD71 /* SBGaugeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SBGaugeView.m; path = ../SBGauge/SBGaugeView.m; sourceTree = "<group>"; };
+		EA1898F617C62DC000F7AD71 /* SBGaugeContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBGaugeContext.h; path = ../SBGauge/SBGaugeContext.h; sourceTree = "<group>"; };
+		EA1898F717C62DC000F7AD71 /* SBGaugeContext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SBGaugeContext.m; path = ../SBGauge/SBGaugeContext.m; sourceTree = "<group>"; };
+		EA1898FA17C62E9B00F7AD71 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EA1898B217C62D3100F7AD71 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA1898FB17C62E9B00F7AD71 /* QuartzCore.framework in Frameworks */,
+				EA1898B917C62D3100F7AD71 /* UIKit.framework in Frameworks */,
+				EA1898BB17C62D3100F7AD71 /* Foundation.framework in Frameworks */,
+				EA1898BD17C62D3100F7AD71 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA1898D717C62D3100F7AD71 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA1898DD17C62D3100F7AD71 /* SenTestingKit.framework in Frameworks */,
+				EA1898DE17C62D3100F7AD71 /* UIKit.framework in Frameworks */,
+				EA1898DF17C62D3100F7AD71 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EA1898AC17C62D3100F7AD71 = {
+			isa = PBXGroup;
+			children = (
+				EA1898FA17C62E9B00F7AD71 /* QuartzCore.framework */,
+				EA1898BE17C62D3100F7AD71 /* SBGaugeExample */,
+				EA1898E217C62D3100F7AD71 /* SBGaugeExampleTests */,
+				EA1898B717C62D3100F7AD71 /* Frameworks */,
+				EA1898B617C62D3100F7AD71 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EA1898B617C62D3100F7AD71 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EA1898B517C62D3100F7AD71 /* SBGaugeExample.app */,
+				EA1898DB17C62D3100F7AD71 /* SBGaugeExampleTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EA1898B717C62D3100F7AD71 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EA1898F317C62DAF00F7AD71 /* SBGauge */,
+				EA1898B817C62D3100F7AD71 /* UIKit.framework */,
+				EA1898BA17C62D3100F7AD71 /* Foundation.framework */,
+				EA1898BC17C62D3100F7AD71 /* CoreGraphics.framework */,
+				EA1898DC17C62D3100F7AD71 /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EA1898BE17C62D3100F7AD71 /* SBGaugeExample */ = {
+			isa = PBXGroup;
+			children = (
+				EA1898C717C62D3100F7AD71 /* SBAppDelegate.h */,
+				EA1898C817C62D3100F7AD71 /* SBAppDelegate.m */,
+				EA1898D017C62D3100F7AD71 /* SBViewController.h */,
+				EA1898D117C62D3100F7AD71 /* SBViewController.m */,
+				EA1898D317C62D3100F7AD71 /* SBViewController.xib */,
+				EA1898BF17C62D3100F7AD71 /* Supporting Files */,
+			);
+			path = SBGaugeExample;
+			sourceTree = "<group>";
+		};
+		EA1898BF17C62D3100F7AD71 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EA1898C017C62D3100F7AD71 /* SBGaugeExample-Info.plist */,
+				EA1898C117C62D3100F7AD71 /* InfoPlist.strings */,
+				EA1898C417C62D3100F7AD71 /* main.m */,
+				EA1898C617C62D3100F7AD71 /* SBGaugeExample-Prefix.pch */,
+				EA1898CA17C62D3100F7AD71 /* Default.png */,
+				EA1898CC17C62D3100F7AD71 /* Default@2x.png */,
+				EA1898CE17C62D3100F7AD71 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EA1898E217C62D3100F7AD71 /* SBGaugeExampleTests */ = {
+			isa = PBXGroup;
+			children = (
+				EA1898E817C62D3100F7AD71 /* SBGaugeExampleTests.h */,
+				EA1898E917C62D3100F7AD71 /* SBGaugeExampleTests.m */,
+				EA1898E317C62D3100F7AD71 /* Supporting Files */,
+			);
+			path = SBGaugeExampleTests;
+			sourceTree = "<group>";
+		};
+		EA1898E317C62D3100F7AD71 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EA1898E417C62D3100F7AD71 /* SBGaugeExampleTests-Info.plist */,
+				EA1898E517C62D3100F7AD71 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EA1898F317C62DAF00F7AD71 /* SBGauge */ = {
+			isa = PBXGroup;
+			children = (
+				EA1898F417C62DC000F7AD71 /* SBGaugeView.h */,
+				EA1898F517C62DC000F7AD71 /* SBGaugeView.m */,
+				EA1898F617C62DC000F7AD71 /* SBGaugeContext.h */,
+				EA1898F717C62DC000F7AD71 /* SBGaugeContext.m */,
+			);
+			name = SBGauge;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EA1898B417C62D3100F7AD71 /* SBGaugeExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EA1898ED17C62D3100F7AD71 /* Build configuration list for PBXNativeTarget "SBGaugeExample" */;
+			buildPhases = (
+				EA1898B117C62D3100F7AD71 /* Sources */,
+				EA1898B217C62D3100F7AD71 /* Frameworks */,
+				EA1898B317C62D3100F7AD71 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SBGaugeExample;
+			productName = SBGaugeExample;
+			productReference = EA1898B517C62D3100F7AD71 /* SBGaugeExample.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EA1898DA17C62D3100F7AD71 /* SBGaugeExampleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EA1898F017C62D3100F7AD71 /* Build configuration list for PBXNativeTarget "SBGaugeExampleTests" */;
+			buildPhases = (
+				EA1898D617C62D3100F7AD71 /* Sources */,
+				EA1898D717C62D3100F7AD71 /* Frameworks */,
+				EA1898D817C62D3100F7AD71 /* Resources */,
+				EA1898D917C62D3100F7AD71 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EA1898E117C62D3100F7AD71 /* PBXTargetDependency */,
+			);
+			name = SBGaugeExampleTests;
+			productName = SBGaugeExampleTests;
+			productReference = EA1898DB17C62D3100F7AD71 /* SBGaugeExampleTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EA1898AD17C62D3100F7AD71 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = SB;
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Stephen Bartholomew";
+			};
+			buildConfigurationList = EA1898B017C62D3100F7AD71 /* Build configuration list for PBXProject "SBGaugeExample" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = EA1898AC17C62D3100F7AD71;
+			productRefGroup = EA1898B617C62D3100F7AD71 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EA1898B417C62D3100F7AD71 /* SBGaugeExample */,
+				EA1898DA17C62D3100F7AD71 /* SBGaugeExampleTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EA1898B317C62D3100F7AD71 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA1898C317C62D3100F7AD71 /* InfoPlist.strings in Resources */,
+				EA1898CB17C62D3100F7AD71 /* Default.png in Resources */,
+				EA1898CD17C62D3100F7AD71 /* Default@2x.png in Resources */,
+				EA1898CF17C62D3100F7AD71 /* Default-568h@2x.png in Resources */,
+				EA1898D517C62D3100F7AD71 /* SBViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA1898D817C62D3100F7AD71 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA1898E717C62D3100F7AD71 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		EA1898D917C62D3100F7AD71 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EA1898B117C62D3100F7AD71 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA1898C517C62D3100F7AD71 /* main.m in Sources */,
+				EA1898C917C62D3100F7AD71 /* SBAppDelegate.m in Sources */,
+				EA1898D217C62D3100F7AD71 /* SBViewController.m in Sources */,
+				EA1898F817C62DC000F7AD71 /* SBGaugeView.m in Sources */,
+				EA1898F917C62DC000F7AD71 /* SBGaugeContext.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA1898D617C62D3100F7AD71 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA1898EA17C62D3100F7AD71 /* SBGaugeExampleTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EA1898E117C62D3100F7AD71 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EA1898B417C62D3100F7AD71 /* SBGaugeExample */;
+			targetProxy = EA1898E017C62D3100F7AD71 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EA1898C117C62D3100F7AD71 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EA1898C217C62D3100F7AD71 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		EA1898D317C62D3100F7AD71 /* SBViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EA1898D417C62D3100F7AD71 /* en */,
+			);
+			name = SBViewController.xib;
+			sourceTree = "<group>";
+		};
+		EA1898E517C62D3100F7AD71 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EA1898E617C62D3100F7AD71 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EA1898EB17C62D3100F7AD71 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		EA1898EC17C62D3100F7AD71 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EA1898EE17C62D3100F7AD71 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SBGaugeExample/SBGaugeExample-Prefix.pch";
+				INFOPLIST_FILE = "SBGaugeExample/SBGaugeExample-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		EA1898EF17C62D3100F7AD71 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SBGaugeExample/SBGaugeExample-Prefix.pch";
+				INFOPLIST_FILE = "SBGaugeExample/SBGaugeExample-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		EA1898F117C62D3100F7AD71 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SBGaugeExample.app/SBGaugeExample";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SBGaugeExample/SBGaugeExample-Prefix.pch";
+				INFOPLIST_FILE = "SBGaugeExampleTests/SBGaugeExampleTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		EA1898F217C62D3100F7AD71 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SBGaugeExample.app/SBGaugeExample";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SBGaugeExample/SBGaugeExample-Prefix.pch";
+				INFOPLIST_FILE = "SBGaugeExampleTests/SBGaugeExampleTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EA1898B017C62D3100F7AD71 /* Build configuration list for PBXProject "SBGaugeExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA1898EB17C62D3100F7AD71 /* Debug */,
+				EA1898EC17C62D3100F7AD71 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EA1898ED17C62D3100F7AD71 /* Build configuration list for PBXNativeTarget "SBGaugeExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA1898EE17C62D3100F7AD71 /* Debug */,
+				EA1898EF17C62D3100F7AD71 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		EA1898F017C62D3100F7AD71 /* Build configuration list for PBXNativeTarget "SBGaugeExampleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA1898F117C62D3100F7AD71 /* Debug */,
+				EA1898F217C62D3100F7AD71 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EA1898AD17C62D3100F7AD71 /* Project object */;
+}
