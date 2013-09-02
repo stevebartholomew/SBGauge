@@ -6,7 +6,14 @@ SBGauge is a simple gauge view for iOS. You can easily customize color, size &am
 
 ### Installing manually
 
-Clone this respository and add these files to your project:
+You'll need the following frameworks before integrating `SBGauge`:
+
+```bash
+QuartzCore.framework
+CoreGraphics.framework
+```
+
+Next, clone this respository and add these files to your project:
 
 ```bash
 SBGauge/SBGaugeView.h
