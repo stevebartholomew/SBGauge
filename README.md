@@ -1,6 +1,6 @@
 # SBGauge
 
-SBGauge is a simple gauge view for iOS. You can easily customize color, size &amp; segments.
+SBGauge is a simple gauge view for iOS. You can easily customize color, size &amp; segments. It is extracted from the [Groove Coach](http://www.groovecoachapp.com) rhythm training app.
 
 ## Getting Started
 
@@ -146,3 +146,17 @@ Use a timer to increase steps over time:
   }
 }
 ```
+
+### Support
+
+* Add a Github Issue
+* Contact me on twitter [@sbartholomew](http://twitter.com/sbartholomew)
+* Submit a pull request :)
+
+### Contributing
+
+* Fork it
+* Create your feature branch (git checkout -b my-new-feature)
+* Commit your changes (git commit -am 'Added some feature')
+* Push to the branch (git push origin my-new-feature)
+* Create new Pull Request
