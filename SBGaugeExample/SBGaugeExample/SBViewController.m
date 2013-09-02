@@ -20,7 +20,7 @@
 - (void)viewDidLoad
 {
   [super viewDidLoad];
-  self.view.backgroundColor = [UIColor colorWithRed:0.18 green:0.18 blue:0.19 alpha:1.0];
+  self.view.backgroundColor = [UIColor whiteColor];
   UIColor *gaugeColor = [UIColor colorWithRed:0.87 green:0.49 blue:0.16 alpha:1.0];
   UIColor *trackColor = [UIColor colorWithRed:0.14 green:0.14 blue:0.14 alpha:1.0];
   
@@ -35,7 +35,7 @@
                        gaugeColor:gaugeColor
                        trackColor:trackColor];
   
-  [self.progressGauge updateSegments:50
+  [self.progressGauge updateSegments:6
                           width:2.0
                      gaugeColor:gaugeColor
                      trackColor:trackColor];
@@ -51,11 +51,13 @@
 - (IBAction)up:(id)sender {
   [self.donutGauge stepUp];
   [self.pieGauge stepUp];
+  [self.progressGauge stepUp];
 }
 
 - (IBAction)down:(id)sender {
   [self.donutGauge stepDown];
   [self.pieGauge stepDown];
+  [self.progressGauge stepDown];
 }
 
 - (IBAction)play:(id)sender {
@@ -67,9 +69,13 @@
 }
 
 - (void) increaseProgressGauge {
+  [self.donutGauge stepUp];
+  [self.pieGauge stepUp];
   [self.progressGauge stepUp];
+  
   self.currentProgressStep += 1;
-  if(self.currentProgressStep >= 50) {
+  if(self.currentProgressStep >= 6) {
+    self.currentProgressStep = 0;
     [self.timer invalidate];
     self.timer = nil;
   }

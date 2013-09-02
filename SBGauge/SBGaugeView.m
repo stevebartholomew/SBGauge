@@ -87,7 +87,7 @@
 
 - (CAShapeLayer *) drawCircleLayer:(UIColor *)color
 {
-  CGFloat radius = MIN(self.frame.size.width,self.frame.size.height)/2;
+  CGFloat radius = (MIN(self.frame.size.width,self.frame.size.height)/2)+40;
   CGFloat inset  = self.width/2;
   
   CAShapeLayer *circleLayer = [CAShapeLayer layer];
