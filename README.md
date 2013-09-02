@@ -36,25 +36,21 @@ SBGauge *donutGauge = [[SBGaugeView alloc] initWithSegments:6
                                                 gaugeColor:gaugeColor
                                                 trackColor:trackColor];
 
-// Set size
 ```
 
 ### Interface Builder
 
-![Drop a blank UIView into your window](assets/ib-guide-view.png)
+*Drop a blank UIView into your window:*<br/>
+![](assets/ib-guide-view.png)
 
-<br/>
+*Set the view's class to SBGaugeView:*<br/>
+![](assets/ib-guide-setclass.png)
 
-![Set the view's class to SBGaugeView](assets/ib-guide-setclass.png)
+*Set the size to a square for best results:*<br/>
+![](assets/ib-guide-size.png)
 
-<br/>
-
-![Set the size to a square for best results](assets/ib-guide-size.png)
-
-<br/>
-
-![ Connect the view to your view controller](assets/ib-guide-connect.png)
-
+*Connect the view to your view controller:*<br/>
+![](assets/ib-guide-connect.png)
 <br/>
 
 Once the view is hooked up, you can update the configuration with the settings you need:
